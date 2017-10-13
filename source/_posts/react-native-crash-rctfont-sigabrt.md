@@ -1,5 +1,5 @@
 ---
-title: 'React Native 一处诡异 crash - mutex lock failed: Invalid argument'
+title: 'React Native 一处诡异 crash: RCTFont SIGABRT'
 categories:
   - 笔记
 date: 2017-09-29 01:10:29
@@ -14,7 +14,10 @@ tags:
 
 ![屏幕快照](/images/2017/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-31%20%E4%B8%8B%E5%8D%889.38.38.png)
 
-后台查到的崩溃栈大概长这样：
+崩溃的方法是
+`+[RCTFont updateFont:withFamily:size:weight:style:variant:scaleMultiplier:]`，在这个位置会抛出 `mutex lock failed: Invalid argument` 的异常。
+
+查了下崩溃栈，大概长这样：
 
 ```
 Thread 24 Crashed:
@@ -70,7 +73,7 @@ Thread 24 Crashed:
 
 给 `handleApplicationDeactivationWithScene` 等方法下个断点，发现只有在用户手动 kill 掉 app 时这些方法才会被调用，猜测这个时候系统可能正在做一些清理工作，这时候如果有其他线程调用了 `mutex::lock` 可能就会导致异常。
 
-假设上面的猜测为真，那么解决问题的关键是让应用进程结束时不调用 `mutex::lock` 方法。查看 React Native 源码，crash 处的代码只被一个方法调用，即 `+[RCTFont updateFont:withFamily:size:weight:style:variant:scaleMultiplier:]`
+假设上面的猜测为真，那么解决问题的关键是让应用进程结束时不调用 `mutex::lock` 方法。查看 React Native 源码，crash 处的代码只被一个方法调用，即上面提到的 `+[RCTFont updateFont:withFamily:size:weight:style:variant:scaleMultiplier:]`
 
 ![屏幕快照 2017-08-09 上午11.45.36](/images/2017/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-08-09%20%E4%B8%8A%E5%8D%8811.45.36.png)
 
