@@ -78,5 +78,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@yeatse.com:hexo-pages.git
+  repo: git@github.com:Yeatse/yeatse.github.io.git
   branch: master
