@@ -1,0 +1,27 @@
+entries:
+  - title: 关于
+    entries:
+      - title: 夜切同学的拖更现场
+      - title: GitHub 主页
+        url: https://github.com/yeatse
+      - title: 微博主页
+        url: https://weibo.com/yeatse
+
+  - title: 文章列表
+    post_list:
+      limit: 10
+      show_more: true
+      show_more_text: 查看更多...
+      show_more_url: archive.html
+
+  - title: tags
+    url: /tags.html
+
+  - title: rss 订阅
+    url: feed.xml
+  
+  - title: 相关链接
+    entries:
+      - title: 夜切的软件屋
+        url: https://maruko.appinn.me/config/yeatse.html
+      - title: "主题修改自 <a href='https://github.com/riggraz/no-style-please' target='_blank'>no-style-please</a>"
