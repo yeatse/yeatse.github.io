@@ -6,7 +6,7 @@ categories:
   - 笔记
 date: 2015-10-18 14:09:41
 tags:
-  - Ops
+  - Tools
 ---
 
 最近发现了个wordpress主题[Author](https://www.competethemes.com/author/)，装上去还是挺好看的，对移动版适配得还可以，但是一些设置项要激活的话需要购买pro版Orz。不过直接改style.css还是可以的，就是升级之后手动改过的文件都会还原，所以在这里做个记录，万一以后忘了呢。至于为什么我一定要去升级。。。强迫症呗~

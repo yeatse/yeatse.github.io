@@ -6,7 +6,7 @@ categories:
   - 笔记
 date: 2015-11-08 22:47:46
 tags:
-  - Ops
+  - Tools
 ---
 
 在iPhone上安装了wordpress的移动客户端，里边有个统计的功能，需要安装Jetpack插件包才能实现：
