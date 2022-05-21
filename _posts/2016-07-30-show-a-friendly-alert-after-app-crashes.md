@@ -3,7 +3,7 @@ layout: post
 title: 在 iOS APP 崩溃时弹出友好提示框
 categories:
   - 笔记
-date: 2016-07-30 14:57:57
+date: 2016-07-30 14:57:57 +0800
 tags:
   - iOS
 ---

@@ -6,7 +6,7 @@ tags:
 id: 229
 categories:
   - 笔记
-date: 2016-02-18 16:03:47
+date: 2016-02-18 16:03:47 +0800
 ---
 
 转自[https://www.puteulanus.com/archives/677](https://www.puteulanus.com/archives/677)，略有修改，修复了Source Tree等软件的兼容问题。

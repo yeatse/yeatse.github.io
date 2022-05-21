@@ -7,7 +7,7 @@ tags:
 id: 186
 categories:
   - 笔记
-date: 2015-11-01 02:32:35
+date: 2015-11-01 02:32:35 +0800
 ---
 
 最近在做的项目里要实现在Android中播放视频这么一个需求。功能本身并不复杂，因为赶时间图省事，没有用Android底层的MediaPlayer API，直接用了谷歌封装好的`VideoView`组件：

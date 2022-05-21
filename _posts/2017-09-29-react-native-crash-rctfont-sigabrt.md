@@ -3,7 +3,7 @@ layout: post
 title: 'React Native 一处诡异 crash: RCTFont SIGABRT'
 categories:
   - 笔记
-date: 2017-09-29 01:10:29
+date: 2017-09-29 01:10:29 +0800
 tags:
   - iOS
   - React Native

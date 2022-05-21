@@ -6,7 +6,7 @@ tags:
 id: 254
 categories:
   - 笔记
-date: 2016-02-21 23:03:33
+date: 2016-02-21 23:03:33 +0800
 ---
 
 使用的是`Let's Encrypt`这个免费的证书签发服务，按照[这里](https://imququ.com/post/letsencrypt-certificate.html)的教程一步步照着来，很快就完成了。

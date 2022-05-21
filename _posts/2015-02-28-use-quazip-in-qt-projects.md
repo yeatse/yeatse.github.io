@@ -7,7 +7,7 @@ tags:
 id: 38
 categories:
   - 笔记
-date: 2015-02-28 18:34:55
+date: 2015-02-28 18:34:55 +0800
 ---
 
 环境：Desktop Qt 5.4.1 MSVC2013 32bit

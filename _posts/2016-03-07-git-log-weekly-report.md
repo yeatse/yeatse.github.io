@@ -6,7 +6,7 @@ tags:
 id: 278
 categories:
   - 笔记
-date: 2016-03-07 20:03:56
+date: 2016-03-07 20:03:56 +0800
 ---
 
 *2016-3-15 update: 项目已提交至GitHub，地址<https://github.com/yeatse/git-log-weekly-report/>*
