@@ -12,7 +12,7 @@ favicon: "favicon.ico"
 
 timezone: Asia/Shanghai
 
-remote_theme: yous/whiteglass
+remote_theme: riggraz/no-style-please
 
 theme_config:
   appearance: "auto"
