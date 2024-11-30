@@ -12,7 +12,7 @@ favicon: "favicon.ico"
 
 timezone: Asia/Shanghai
 
-remote_theme: bradleytaunt/lightspeed
+remote_theme: yous/whiteglass
 
 theme_config:
   appearance: "auto"
