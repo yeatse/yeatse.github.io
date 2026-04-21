@@ -24,4 +24,6 @@ entries:
     entries:
       - title: 夜切的软件屋
         url: https://maruko.appinn.me/config/yeatse.html
+      - title: Cocono AI 记账
+        url: https://cocono.moecoder.com
       - title: "主题修改自 <a href='https://github.com/riggraz/no-style-please'>no-style-please</a>"
