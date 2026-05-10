@@ -12,10 +12,10 @@ entries:
       limit: 10
       show_more: true
       show_more_text: 查看更多...
-      show_more_url: /blog.html
+      show_more_url: /blog/
 
   - title: tags
-    url: /tags.html
+    url: /tags/
 
   - title: rss 订阅
     url: /index.xml
@@ -26,4 +26,3 @@ entries:
         url: https://maruko.appinn.me/config/yeatse.html
       - title: Cocono AI 记账
         url: https://cocono.moecoder.com
-      - title: '主题修改自 <a href="https://github.com/janraasch/hugo-bearblog">hugo-bearblog</a>'

@@ -1,9 +1,12 @@
 {{- $ctx := .ctx -}}
+{{- $siteHost := (urls.Parse $ctx.Site.BaseURL).Host -}}
 <ul>
 {{- range .entries }}
+  {{- $u := urls.Parse (.url | default "") -}}
+  {{- $external := and $u.Scheme $u.Host (ne $u.Host $siteHost) -}}
   <li>
   {{- if .url -}}
-    <a href="{{ .url | safeURL }}">{{ .title | safeHTML }}</a>
+    <a href="{{ .url | safeURL }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .title | safeHTML }}</a>
   {{- else -}}
     {{ .title | safeHTML }}
   {{- end -}}

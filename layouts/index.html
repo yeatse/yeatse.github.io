@@ -3,5 +3,5 @@
 {{ end }}
 
 {{ define "main" }}
-{{ partial "sidebar_menu.html" (dict "ctx" . "entries" .Site.Data.sidebar.entries) }}
+{{ partial "sidebar_menu.html" (dict "ctx" . "entries" hugo.Data.sidebar.entries) }}
 {{ end }}
