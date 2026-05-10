@@ -1,0 +1,7 @@
+{{ define "header" }}
+<h1>{{ .Site.Title }}</h1>
+{{ end }}
+
+{{ define "main" }}
+{{ partial "sidebar_menu.html" (dict "ctx" . "entries" hugo.Data.sidebar.entries) }}
+{{ end }}

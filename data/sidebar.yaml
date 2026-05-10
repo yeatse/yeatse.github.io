@@ -1,0 +1,28 @@
+entries:
+  - title: 关于
+    entries:
+      - title: 夜切同学的拖更现场
+      - title: github 主页
+        url: https://github.com/yeatse
+      - title: 微博主页
+        url: https://weibo.com/yeatse
+
+  - title: 文章列表
+    post_list:
+      limit: 10
+      show_more: true
+      show_more_text: 查看更多...
+      show_more_url: /blog/
+
+  - title: tags
+    url: /tags/
+
+  - title: rss 订阅
+    url: /index.xml
+
+  - title: 相关链接
+    entries:
+      - title: 夜切的软件屋
+        url: https://maruko.appinn.me/config/yeatse.html
+      - title: Cocono AI 记账
+        url: https://cocono.moecoder.com

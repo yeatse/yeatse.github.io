@@ -1,0 +1,46 @@
+baseURL = "https://blog.moecoder.com/"
+theme = "hugo-bearblog"
+
+title = "Wasteland"
+author = "Yang Chao"
+copyright = "© Yang Chao"
+defaultContentLanguage = "zh-cn"
+
+enableRobotsTXT = true
+uglyURLs = true
+
+[languages]
+  [languages.zh-cn]
+    locale = "zh-CN"
+
+[permalinks]
+  blog = "/:slug"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  description = "夜切同学的拖更现场"
+  favicon = "favicon.ico"
+  dateFormat = "2006-01-02"
+  enablePostNavigator = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "friendly"
+    lineNos = false
+    codeFences = true
+    guessSyntax = false
+    noClasses = true
+    tabWidth = 4
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[services]
+  [services.rss]
+    limit = 50
