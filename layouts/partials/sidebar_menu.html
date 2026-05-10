@@ -1,0 +1,31 @@
+{{- $ctx := .ctx -}}
+<ul>
+{{- range .entries }}
+  <li>
+  {{- if .url -}}
+    <a href="{{ .url | safeURL }}">{{ .title | safeHTML }}</a>
+  {{- else -}}
+    {{ .title | safeHTML }}
+  {{- end -}}
+  </li>
+  {{- with .post_list }}
+    {{- $posts := where $ctx.Site.RegularPages "Section" "blog" -}}
+    {{- $limit := .limit | default 10 -}}
+    {{- $shown := first $limit $posts -}}
+    <ul>
+    {{- range $shown }}
+      <li>
+        <span>{{ .Date.Format (default "2006-01-02" $ctx.Site.Params.dateFormat) }}</span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{- end }}
+    {{- if and .show_more (gt (len $posts) $limit) }}
+      <li><a href="{{ .show_more_url | safeURL }}">{{ .show_more_text | default "Show more..." }}</a></li>
+    {{- end }}
+    </ul>
+  {{- end }}
+  {{- with .entries }}
+    {{- partial "sidebar_menu.html" (dict "ctx" $ctx "entries" .) }}
+  {{- end }}
+{{- end }}
+</ul>

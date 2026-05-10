@@ -24,6 +24,7 @@ uglyURLs = true
   favicon = "favicon.ico"
   dateFormat = "2006-01-02"
   enablePostNavigator = true
+  hideMadeWithLine = true
 
 [markup]
   [markup.goldmark]
