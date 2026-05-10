@@ -4,11 +4,14 @@ theme = "hugo-bearblog"
 title = "Wasteland"
 author = "Yang Chao"
 copyright = "© Yang Chao"
-languageCode = "zh-CN"
 defaultContentLanguage = "zh-cn"
 
 enableRobotsTXT = true
 uglyURLs = true
+
+[languages]
+  [languages.zh-cn]
+    locale = "zh-CN"
 
 [permalinks]
   blog = "/:slug"
